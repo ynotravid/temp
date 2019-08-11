@@ -8,7 +8,7 @@ const Notifier = ({ children, reduxRoot }) => {
 
   return (
     <SnackbarProvider maxSnack={3}>
-      <NotifierReduxProxy reduxRoot={reduxRoot} />
+      {/* <NotifierReduxProxy reduxRoot={reduxRoot} /> */}
       {children}
     </SnackbarProvider>
   )
