@@ -1,0 +1,110 @@
+{
+  "name": "test",
+  "author": "ynotravid",
+  "version": "1.0.1",
+  "description": "test",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ynotravid/temp.git"
+  },
+  "homepage": "https://advmicrogrid.com/",
+  "peerDependencies": {
+    "@babel/runtime": "*",
+    "@material-ui/core": "^4.1.3",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/styles": "^4.1.2",
+    "lodash": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "redux": "*"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.1.2",
+    "@material-ui/core": "^4.1.3",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/styles": "^4.1.2",
+    "@storybook/addon-info": "^5.1.9",
+    "@storybook/theming": "^5.1.9",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "brcast": "^3.0.1",
+    "classnames": "^2.2.5",
+    "clsx": "^1.0.4",
+    "debounce": "^1.1.0",
+    "deepmerge": "^2.0.1",
+    "dom-helpers": "^3.2.1",
+    "hoist-non-react-statics": "^3.0.0",
+    "is-plain-object": "^2.0.4",
+    "keycode": "^2.1.9",
+    "lodash": "^4.17.10",
+    "normalize-scroll-left": "^0.1.2",
+    "notistack": "^0.8.8",
+    "prop-types": "^15.6.0",
+    "react-event-listener": "^0.6.2",
+    "react-transition-group": "^2.2.1",
+    "recompose": "0.28.0 - 0.30.0",
+    "warning": "^4.0.1",
+    "yarn": "^1.12.3"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,mjs}"
+    ],
+    "setupFiles": [
+      "<rootDir>/config/polyfills.js"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>config/jest/init.js",
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx",
+      "node",
+      "mjs"
+    ]
+  },
+  "size-limit": [
+    {
+      "path": "./build/index.js",
+      "limit": "9 KB"
+    }
+  ],
+  "browser": {
+    "Notifier": "./build/ducks/Notifier/Notifier.js",
+    "NotifierReduxProxy": "./build/ducks/Notifier/NotifierReduxProxy.js",
+    "notifierActions": "./build/ducks/Notifier/actions.js",
+    "notifierReducer": "./build/ducks/Notifier/index.js"
+  },
+  "main": "./index.js",
+  "module": "./es/index.js",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "private"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "files": [
+    "./build",
+    "./src"
+  ],
+  "resolutions": {
+    "**/event-stream": "3.3.4"
+  },
+  "private": true
+}

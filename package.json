@@ -34,9 +34,7 @@
     "storybook:static": "npx http-server docs",
     "docker:build": "docker build -t storybook:$npm_package_version .",
     "docker:interactive": "docker run -it -p 8080:8080 --rm storybook:$npm_package_version bash",
-    "watch": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ./babel.config.js ./src --out-dir ./build/es --ignore *.test.js --watch",
-    "deploy": "node scripts/cdnify.js -b ux.amsarmada.com -r us-west-2",
-    "prepare": "npm run build"
+    "watch": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ./babel.config.js ./src --out-dir ./build/es --ignore *.test.js --watch"
   },
   "peerDependencies": {
     "@babel/runtime": "*",

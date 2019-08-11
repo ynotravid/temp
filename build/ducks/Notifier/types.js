@@ -1,0 +1,18 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = exports.REMOVE_SNACKBAR = exports.CLOSE_SNACKBAR = exports.ENQUEUE_SNACKBAR = void 0;
+var ENQUEUE_SNACKBAR = 'ENQUEUE_SNACKBAR';
+exports.ENQUEUE_SNACKBAR = ENQUEUE_SNACKBAR;
+var CLOSE_SNACKBAR = 'CLOSE_SNACKBAR';
+exports.CLOSE_SNACKBAR = CLOSE_SNACKBAR;
+var REMOVE_SNACKBAR = 'REMOVE_SNACKBAR';
+exports.REMOVE_SNACKBAR = REMOVE_SNACKBAR;
+var _default = {
+  ENQUEUE_SNACKBAR: ENQUEUE_SNACKBAR,
+  CLOSE_SNACKBAR: CLOSE_SNACKBAR,
+  REMOVE_SNACKBAR: REMOVE_SNACKBAR
+};
+exports.default = _default;

@@ -10,7 +10,6 @@
 /.eslintcache
 /.next
 /.nyc_output
-build
 docs
 /coverage
 /test/regressions/screenshots
