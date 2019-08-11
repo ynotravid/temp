@@ -26,14 +26,7 @@
     "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ./babel.config.js ./src --out-dir ./build/es --ignore *.test.js",
     "build:umd": "cross-env BABEL_ENV=production-umd rollup -c scripts/rollup.config.js",
     "build:copy-files": "babel-node --config-file ./babel.config.js ./scripts/copy-files.js",
-    "build": "npm run build:es2015 && npm run build:es2015modules && npm run build:es && npm run build:copy-files",
-    "release": "npm run build",
-    "storybook": "start-storybook -p 8999 -c config/.storybook",
-    "build-storybook": "NODE_ENV=development build-storybook -c config/.storybook -o docs",
-    "storybook:static": "npx http-server docs",
-    "docker:build": "docker build -t storybook:$npm_package_version .",
-    "docker:interactive": "docker run -it -p 8080:8080 --rm storybook:$npm_package_version bash",
-    "watch": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ./babel.config.js ./src --out-dir ./build/es --ignore *.test.js --watch"
+    "build": "npm run build:es2015 && npm run build:es2015modules && npm run build:es && npm run build:copy-files"
   },
   "peerDependencies": {
     "@babel/runtime": "*",
