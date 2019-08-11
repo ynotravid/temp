@@ -13,8 +13,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _notistack = require("notistack");
 
-var _NotifierReduxProxy = _interopRequireDefault(require("./NotifierReduxProxy"));
-
+// import NotifierReduxProxy from './NotifierReduxProxy'
 var Notifier = function Notifier(_ref) {
   var children = _ref.children,
       reduxRoot = _ref.reduxRoot;
