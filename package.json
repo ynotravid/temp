@@ -194,10 +194,6 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "files": [
-    "./build",
-    "./src"
-  ],
   "resolutions": {
     "**/event-stream": "3.3.4"
   }
