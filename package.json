@@ -8,7 +8,6 @@
     "type": "git",
     "url": "https://github.com/ynotravid/temp.git"
   },
-  "homepage": "https://advmicrogrid.com/",
   "scripts": {
     "jsonlint": "npm run --silent jsonlint:files | xargs -n1 jsonlint -q -c && echo \"jsonlint: no lint errors\"",
     "jsonlint:files": "find . -name \"*.json\" | grep -v -f .eslintignore",
@@ -190,52 +189,6 @@
     "whatwg-fetch": "2.0.3",
     "workbox-build": "^3.6.3"
   },
-  "nyc": {
-    "include": [
-      "packages/ams-ui/src/**/*.js"
-    ],
-    "exclude": [
-      "**/*.test.js"
-    ],
-    "sourceMap": false,
-    "instrument": false
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,mjs}"
-    ],
-    "setupFiles": [
-      "<rootDir>/config/polyfills.js"
-    ],
-    "setupTestFrameworkScriptFile": "<rootDir>config/jest/init.js",
-    "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
-      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
-    ],
-    "testEnvironment": "node",
-    "testURL": "http://localhost",
-    "transform": {
-      "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
-    },
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "jsx",
-      "node",
-      "mjs"
-    ]
-  },
-  "size-limit": [
-    {
-      "path": "./build/index.js",
-      "limit": "9 KB"
-    }
-  ],
   "browser": {
     "Notifier": "./build/ducks/Notifier/Notifier.js",
     "NotifierReduxProxy": "./build/ducks/Notifier/NotifierReduxProxy.js",
@@ -245,9 +198,6 @@
   "main": "./build/index.js",
   "module": "./build/es/index.js",
   "sideEffects": false,
-  "publishConfig": {
-    "access": "private"
-  },
   "engines": {
     "node": ">=6.0.0"
   },
