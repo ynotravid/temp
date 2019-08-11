@@ -1,0 +1,13 @@
+/.git
+/.next
+/coverage
+/flow
+/flow-typed
+/packages/ams-ui-codemod/lib
+/packages/ams-ui-codemod/src/*/*.test
+/packages/ams-ui-codemod/src/*/*.test.js
+/tmp
+build
+config
+node_modules
+scripts
