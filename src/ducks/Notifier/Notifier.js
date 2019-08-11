@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { SnackbarProvider } from 'notistack'
-import NotifierReduxProxy from './NotifierReduxProxy'
+// import NotifierReduxProxy from './NotifierReduxProxy'
 
 
 const Notifier = ({ children, reduxRoot }) => {
