@@ -107,7 +107,7 @@ const DefaultContent = React.forwardRef((props, ref) => {
       className={clsx(
         classes.base,
         classes[variant],
-        !hideIconVariant && iconVariant[variant] ? classes.lessPadding : null,
+        // !hideIconVariant && iconVariant[variant] ? classes.lessPadding : null,
         classNameProp,
       )}
       {...contentProps}
