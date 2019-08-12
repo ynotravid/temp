@@ -114,7 +114,7 @@ const DefaultContent = React.forwardRef((props, ref) => {
       aria-describedby="client-snackbar"
       message={
         <span id="client-snackbar" className={classes.message}>
-          {!hideIconVariant ? iconVariant[variant] : null}
+          {/* {!hideIconVariant ? iconVariant[variant] : null} */}
           {message}
         </span>
       }
