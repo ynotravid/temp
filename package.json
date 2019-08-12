@@ -26,7 +26,7 @@
     "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ./babel.config.js ./src --out-dir ./build/es --ignore *.test.js",
     "build:umd": "cross-env BABEL_ENV=production-umd rollup -c scripts/rollup.config.js",
     "build:copy-files": "babel-node --config-file ./babel.config.js ./scripts/copy-files.js",
-    "ibuild": "clean && npm run build:es2015 && npm run build:es2015modules && npm run build:es && npm run build:copy-files"
+    "ibuild": "npm run clean && npm run build:es2015 && npm run build:es2015modules && npm run build:es && npm run build:copy-files"
   },
   "peerDependencies": {
     "@babel/runtime": "*",
